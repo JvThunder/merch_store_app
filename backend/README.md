@@ -6,7 +6,9 @@
 4. pip install Django django-cors-headers
 5. python manage.py createsuperuser 
 6. cd src
-7. python manage.py runserver
+7. python manage.py makemigrations
+8. python manage.py migrate
+9. python manage.py runserver
 
 # Setup from Scratch
 
