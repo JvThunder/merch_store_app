@@ -11,7 +11,7 @@ export default function Cart({ cart }) {
         <>
           <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
             {cart.map((item, index) => (
-              <CartItem key={index} item={item} />
+              <CartItem key={index} item={item} price={item.price} />
             ))}
           </ul>
           <h3>Total: ${totalPrice.toFixed(2)}</h3>

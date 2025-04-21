@@ -10,7 +10,9 @@ export default function ProductItem({ product, addToCart }) {
         boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
       }}
     >
-      <h2>{product.name}</h2>
+      <h2>
+        {product.name} - ${product.price}
+      </h2>
 
       <button
         style={{

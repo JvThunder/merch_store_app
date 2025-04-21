@@ -1,23 +1,22 @@
 {
-  "status": "success",
-  "data": [
+  "products": [
     {
       "id": 1,
       "name": "Fancy Bulb",
       "price": 6,
-      "stock": 15
+      "description": "A fancy bulb"
     },
     {
       "id": 2,
       "name": "Rose in a Bottle",
       "price": 15,
-      "stock": 8
+      "description": "A rose in a bottle"
     },
     {
       "id": 3,
       "name": "Vase",
       "price": 10,
-      "stock": 12
+      "description": "A vase"
     }
   ]
 }

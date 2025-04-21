@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import ProductItem from "./ProductItem";
 import Cart from "./Cart";
-import productsData from "./products.json";
+// import productsData from "./products.json";
+import axios from "axios";
+// import { BACKEND_URL } from ".env";
 
 // Simulate API fetch function
-const fetchProducts = () => {
-  return new Promise((resolve) => {
-    // Simulate network delay
-    setTimeout(() => {
-      resolve(productsData);
-    }, 10000);
-  });
+const fetchProducts = async () => {
+  const response = await axios.get(`http://127.0.0.1:8000/store/list/`);
+  return response.data;
 };
 
 function App() {
@@ -22,8 +20,8 @@ function App() {
     const getProducts = async () => {
       try {
         const response = await fetchProducts();
-        console.log(response.data);
-        setProducts(response.data);
+        console.log(response.products);
+        setProducts(response.products);
       } catch (err) {
         console.error("Error fetching products:", err);
       }
