@@ -21,6 +21,9 @@ function App() {
       try {
         const response = await fetchProducts();
         console.log(response.products);
+        response.products.forEach((product) => {
+          product.price = parseFloat(product.price).toFixed(2);
+        });
         setProducts(response.products);
       } catch (err) {
         console.error("Error fetching products:", err);
