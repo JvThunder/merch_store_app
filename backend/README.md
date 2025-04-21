@@ -5,9 +5,9 @@
 # For Linux/Mac: source store-env/bin/activate
 4. pip install Django django-cors-headers
 5. cd src
-6. python manage.py createsuperuser 
-7. python manage.py makemigrations
-8. python manage.py migrate
+6. python manage.py makemigrations
+7. python manage.py migrate
+8. python manage.py createsuperuser 
 9. python manage.py runserver
 
 # Setup from Scratch
