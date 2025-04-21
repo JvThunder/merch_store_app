@@ -3,11 +3,11 @@ import ProductItem from "./ProductItem";
 import Cart from "./Cart";
 // import productsData from "./products.json";
 import axios from "axios";
-// import { BACKEND_URL } from ".env";
+import { BACKEND_URL } from "./config";
 
 // Simulate API fetch function
 const fetchProducts = async () => {
-  const response = await axios.get(`http://127.0.0.1:8000/store/list/`);
+  const response = await axios.get(`${BACKEND_URL}/store/list/`);
   return response.data;
 };
 
