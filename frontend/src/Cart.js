@@ -1,4 +1,4 @@
-import CartItem from "./CartItem"; // Fixed import
+import CartItem from "./CartItem"; 
 
 export default function Cart({ cart }) {
   const totalPrice = cart.reduce((acc, item) => acc + parseFloat(item.price), 0);
