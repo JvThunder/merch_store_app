@@ -5,7 +5,7 @@
 # For Linux/Mac: source store-env/bin/activate
 4. pip install Django
 5. python manage.py createsuperuser 
-6. cd store_project
+6. cd src
 7. python manage.py runserver
 
 # Setup from Scratch
