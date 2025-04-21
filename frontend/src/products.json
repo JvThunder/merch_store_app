@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": 1,
+      "name": "Fancy Bulb",
+      "price": 6,
+      "stock": 15
+    },
+    {
+      "id": 2,
+      "name": "Rose in a Bottle",
+      "price": 15,
+      "stock": 8
+    },
+    {
+      "id": 3,
+      "name": "Vase",
+      "price": 10,
+      "stock": 12
+    }
+  ]
+}
